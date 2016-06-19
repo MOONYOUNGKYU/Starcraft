@@ -7,16 +7,24 @@ public class Marine extends Unit {
 	}
 	
 	
-	public int hp = 50;
-	public int gun = 10;
+	private int hp = 50;
+	private int gun = 10;
+	private int count;
+	
+	public int gethp() {
+		return hp;
+	}
+	
+	public void sethp(int hp) {
+		this.hp=hp;
+		
+	}
 	
 	
 
-
-
 	
-	public void attack(Fbat target) {
-		for(count=0;count<1;count++){	
+	public void attack(Unit target) {
+		for(count=0;count<3;count++){	
 			if(target.hp>0) {
 				target.hp = target.hp - this.gun;
 				System.out.println(" Fbat의 체력은 " + target.hp);
@@ -35,7 +43,7 @@ public class Marine extends Unit {
 		
 //		target.hp = target.hp - this.gun;
 		
-		for(count=0;count<1;count++){	
+		for(count=0;count<3;count++){	
 			if(target.hp>0) {
 				target.hp = target.hp - this.gun;
 				System.out.println("Marine의 체력은 " + target.hp);

@@ -7,11 +7,18 @@ public class Controller {
 
 	public static void main(String[] args) {
 	
+		Marine marine = new Marine();
+		marine.inform();
 		// TODO Auto-generated method stub
 		Marine m1 = new Marine();
 		Marine m2 = new Marine();
 		Fbat f1 = new Fbat();
 		Fbat f2 = new Fbat();
+		
+		
+		
+		
+		
 		
 		
 
