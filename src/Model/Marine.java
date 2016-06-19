@@ -7,12 +7,9 @@ public class Marine extends Unit {
 	}
 	
 	
-	
-		
-	
 	public int hp = 50;
 	public int gun = 10;
-	public int count;
+	
 	
 
 
