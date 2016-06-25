@@ -14,6 +14,7 @@ public class Controller {
 		Marine m2 = new Marine();
 		Fbat f1 = new Fbat();
 		Fbat f2 = new Fbat();
+		Fbat f3 = new Fbat();
 		
 		
 		
