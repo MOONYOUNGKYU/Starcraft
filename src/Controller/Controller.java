@@ -26,6 +26,8 @@ public class Controller {
 			System.out.println("마린생성 : 1");
 			System.out.println("파이어벳생성 : 2");
 			System.out.println("현황보기 : 3");
+			System.out.println("공격 : 4");
+			
 			int input = scanner.nextInt();
 			
 			
@@ -50,9 +52,16 @@ public class Controller {
 							Unit unit = list.get(i);
 							unit.inform();
 						}
+					    break;
+					 
+			
+					    	
+					    	
+					    	
 						
-						break;
+						
 			}
+			
 		
 			
 			
