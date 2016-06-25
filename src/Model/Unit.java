@@ -8,7 +8,7 @@ public class Unit {
 }
 
 	public void inform() {
-		System.out.println(hp);
+		System.out.println("hp´Â" + hp);
 		
 	}
 	

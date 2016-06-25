@@ -3,7 +3,12 @@ package Model;
 public class Marine extends Unit {
 	
 	public Marine() {
-		super(100);
+		super(50);
+	}
+	
+	public void inform() {
+		System.out.println("¸¶¸°:" + "hp=" + hp);
+		
 	}
 	
 	

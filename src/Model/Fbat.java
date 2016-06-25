@@ -3,8 +3,14 @@ package Model;
 public class Fbat extends Unit {
 	
 	public Fbat() {
-		super(100);
+		super(50);
 	}
+	
+	public void inform() {
+		System.out.println("ÆÄÀÌ¾îºª:" + "hp=" + hp);
+		
+	}
+	
 	
 	private int hp = 50;
 	private int gun = 10;
