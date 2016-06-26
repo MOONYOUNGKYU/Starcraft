@@ -11,11 +11,8 @@ import Model.Unit;
 public class Controller {
 	
 	
-	Unit m1 = new Marine();
-	Unit m2 = new Marine();
-	Unit m3 = new Fbat();
-	Unit m4 = new Fbat();
 
+	
 	public static void main(String[] args) {
 		
 		List<Unit> list = new ArrayList<Unit>();
@@ -26,24 +23,28 @@ public class Controller {
 			System.out.println("마린생성 : 1");
 			System.out.println("파이어벳생성 : 2");
 			System.out.println("현황보기 : 3");
-			System.out.println("공격 : 4");
+			System.out.println("유닛선택 : 4");
+			System.out.println("공격하기 : 5");
 			
 			int input = scanner.nextInt();
 			
-			
+
 			
 			switch(input) {
 					case 1:
-						
-						Marine marine=new Marine();
+						System.out.println("마린의 이름을 입력하세요:");
+						String mname = scanner.next();
+						Marine marine=new Marine(mname);
 						list.add(marine);
 						break;
 						
 						
 					case 2:
 						
-					    Fbat Fbat=new Fbat();
-						list.add(Fbat);
+						System.out.println("파이어뱃의 이름을 입력하세요:");
+						String fname = scanner.next();
+						Fbat fbat=new Fbat(fname);
+						list.add(fbat);
 						break;
 						
 					case 3:
@@ -51,16 +52,54 @@ public class Controller {
 						for(int i=0;i<list.size();i++) {
 							Unit unit = list.get(i);
 							unit.inform();
+				       
+				        }
+						break;
+						
+					case 4:
+						
+						for ( int i=0; i < list.size(); i++) {
+							Unit unit =list.get(i);
+							System.out.println(i +": " + unit.getName());
 						}
-					    break;
-					 
-			
-					    	
-					    	
-					    	
+						
+						int index = scanner.nextInt();
+						Unit selectedUnit = list.get(index);
+						
+						selectedUnit.inform();
+						
+						break;
+						
+					case 5:
+					
+						
+							
 						
 						
-			}
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+				        
+					
+						
+						
+							
+							
+				}
+						
+						
+		}
+	}
 			
 		
 			
@@ -70,7 +109,7 @@ public class Controller {
 			
 					
 		}
-	}
-}
+
+
 
 

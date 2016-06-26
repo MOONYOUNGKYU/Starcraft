@@ -2,12 +2,15 @@ package Model;
 
 public class Marine extends Unit {
 	
-	public Marine() {
-		super(50);
+	public Marine(String name) {
+		super(name,50);
 	}
 	
+	
+	
 	public void inform() {
-		System.out.println("마린:" + "hp=" + hp);
+		
+		System.out.println("마린:" + this.name +"," + "hp=" + hp);
 		
 	}
 	
@@ -15,6 +18,7 @@ public class Marine extends Unit {
 	private int hp = 50;
 	private int gun = 10;
 	private int count;
+
 	
 	public int gethp() {
 		return hp;

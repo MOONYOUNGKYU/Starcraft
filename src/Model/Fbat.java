@@ -2,12 +2,12 @@ package Model;
 
 public class Fbat extends Unit {
 	
-	public Fbat() {
-		super(50);
+	public Fbat(String name) {
+		super(name,50);
 	}
 	
 	public void inform() {
-		System.out.println("ÆÄÀÌ¾îºª:" + "hp=" + hp);
+		System.out.println("ÆÄÀÌ¾îºª:" + this.name + "," + "hp=" + hp);
 		
 	}
 	
